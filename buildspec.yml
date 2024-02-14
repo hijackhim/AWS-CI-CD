@@ -1,0 +1,25 @@
+version: 0.2
+
+#env:
+  #variables:
+      #DOCKER_HUB_USERNAME: /docker/username
+      #DOCKER_HUB_PASSWORD: /docker/password
+      #DOCKER_HUB_URL : /docker/url
+ 
+phases:
+  install:
+    runtime-versions:
+       python: 3.11
+  pre_build:
+    commands:
+      - pip install -r requirements.txt
+    
+  build:
+    commands:
+      - echo "building the docker image"
+      - docker login -u "himanshuofficial123" -p "dckr_pat_-rwRByFgE9Obevvv7TmRNSWTDrg"  "docker.io"
+      - docker build -t "himanshuofficial123/awswali:latest" .
+      - docker push "himanshuofficial123/awswali:latest"
+  post_build:
+    commands:
+      - echo "build is successful"
