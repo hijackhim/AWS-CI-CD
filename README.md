@@ -8,7 +8,7 @@ Pre-requisite
 3.GitHub Account
 4.Common Sense
 
-Step: 1 Create the Codebuild and using Github as source
+Step: 1 Create the Codebuild and using Github as source and use buildspec.yaml file
 
   ![Screenshot 2024-02-15 013245](https://github.com/hijackhim/AWS-CI-CD/assets/105789918/173f3803-c2d3-40e4-a5a9-785fc24ce234)
       
@@ -17,7 +17,7 @@ Step: 1 Create the Codebuild and using Github as source
   ![Screenshot 2024-02-15 013334](https://github.com/hijackhim/AWS-CI-CD/assets/105789918/9f9e35e7-6ec3-4ccf-8480-acca161dbc0f)
 
 
-Step: 2 Create the CodeDeploy by creating the application
+Step: 2 Create the CodeDeploy by creating the application and use appspec.yaml file
 
 ![Screenshot 2024-02-15 013536](https://github.com/hijackhim/AWS-CI-CD/assets/105789918/a9e9a26d-f5c2-41b6-b73f-4e9201973273)
 
